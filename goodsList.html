@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Let Us Go!!</title>
 
+
     <script type="text/javascript" src="lib/lodash-2.4.1/lodash.js"></script>
     <script type="text/javascript" src="lib/lodash-2.4.1/lodash.compat.js"></script>
     <script type="text/javascript" src="lib/jquery-2.1.1/jquery-2.1.1.js"></script>
     <script src="lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="lib/bootstrap-3.2.0-dist/css/bootstrap.min.css"/>
+
+    <script src="js/main.js"></script>
 
 </head>
 <body>
@@ -30,7 +33,7 @@
                         <div class="collapse navbar-collapse" id="navigation_home">
                             <ul class="nav navbar-nav">
                                 <li><a href="index.html">首页</a></li>
-                                <li class="active"><a href="../html/goodsList.html">商品列表</a></li>
+                                <li class="active"><a href="./goodsList.html">商品列表</a></li>
                                 <li><a href="cart.html">购物车</a></li>
                                 <p class="navbar-text">亲，进店有好礼咕～～（╯﹏╰）ｂ</p>
                             </ul>
@@ -41,11 +44,15 @@
             </div>
 
             <div class="col-md-1 col-md-offset-11">
-                <h2><span class="glyphicon glyphicon-shopping-cart"></span></h2>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
+
+                <h2>
+                    <a href="cart.html">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                </h2>
+                <h6 > 购物车（<span class="cartPlus_display"></span>）
+                </h6>
+
             </div>
         </div>
     </div>
@@ -55,7 +62,6 @@
     <div class="panel-heading">
         <table>
             <tr>
-
                 <th><h2>服装鞋包</h2></th>
                 <th><h4 class="text-right">GOODS LIST!!!</h4></th>
             </tr>
@@ -68,7 +74,7 @@
             <th class="text-center">分类</th>
             <th class="text-center">名称</th>
             <th class="text-center">单价</th>
-            <th class="text-center">数量</th>
+            <th class="text-center">单位</th>
             <th class="text-center">添加</th>
         </tr>
         <tr>
@@ -77,72 +83,11 @@
             <td>１２２</td>
             <td>１</td>
             <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
+                <button type="button"
+                        class="btn btn-primary cartPlus_btn">
                     ADD
                 </button>
 
-            </td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
             </td>
         </tr>
     </table>
@@ -166,7 +111,7 @@
             <th class="text-center">分类</th>
             <th class="text-center">名称</th>
             <th class="text-center">单价</th>
-            <th class="text-center">数量</th>
+            <th class="text-center">单位</th>
             <th class="text-center">添加</th>
         </tr>
         <tr>
@@ -175,72 +120,11 @@
             <td>１２２</td>
             <td>１</td>
             <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
+                <button type="button"
+                        class="btn btn-primary cartPlus_btn">
                     ADD
                 </button>
 
-            </td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
             </td>
         </tr>
     </table>
@@ -264,7 +148,7 @@
             <th class="text-center">分类</th>
             <th class="text-center">名称</th>
             <th class="text-center">单价</th>
-            <th class="text-center">数量</th>
+            <th class="text-center">单位</th>
             <th class="text-center">添加</th>
         </tr>
         <tr>
@@ -273,72 +157,11 @@
             <td>１２２</td>
             <td>１</td>
             <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
+                <button type="button"
+                        class="btn btn-primary cartPlus_btn">
                     ADD
                 </button>
 
-            </td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
             </td>
         </tr>
     </table>
@@ -362,7 +185,7 @@
             <th class="text-center">分类</th>
             <th class="text-center">名称</th>
             <th class="text-center">单价</th>
-            <th class="text-center">数量</th>
+            <th class="text-center">单位</th>
             <th class="text-center">添加</th>
         </tr>
         <tr>
@@ -371,72 +194,11 @@
             <td>１２２</td>
             <td>１</td>
             <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
+                <button type="button"
+                        class="btn btn-primary cartPlus_btn">
                     ADD
                 </button>
 
-            </td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
             </td>
         </tr>
     </table>
@@ -459,7 +221,7 @@
             <th class="text-center">分类</th>
             <th class="text-center">名称</th>
             <th class="text-center">单价</th>
-            <th class="text-center">数量</th>
+            <th class="text-center">单位</th>
             <th class="text-center">添加</th>
         </tr>
         <tr>
@@ -468,72 +230,11 @@
             <td>１２２</td>
             <td>１</td>
             <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
+                <button type="button"
+                        class="btn btn-primary cartPlus_btn">
                     ADD
                 </button>
 
-            </td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                94
-            </td>
-            <td>Jackson</td>
-            <td>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..."
-                        class="btn btn-primary">
-                    ADD
-                </button>
             </td>
         </tr>
     </table>

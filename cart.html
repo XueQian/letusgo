@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="lib/bootstrap-3.2.0-dist/css/bootstrap.min.css"/>
 
+    <script src="js/main.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -45,6 +47,8 @@
                         <h1>
                             <a href="cart.html"></a>
                             <span class="glyphicon glyphicon-shopping-cart"></span></h1>
+                        <h6 > 购物车（<span class="cartPlus_display"></span>）
+                        </h6>
                     </div>
                 </div>
             </div>
@@ -80,11 +84,11 @@
                         <td>
                             <div class="btn-group　btn-group-xs">
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartPlus_btn">
                                     <span class="glyphicon glyphicon-plus"></span>
                                 </button>
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartMinus_btn">
                                     <span class="glyphicon glyphicon-minus"></span>
                                 </button>
                             </div>
@@ -115,11 +119,11 @@
                         <td>
                             <div class="btn-group　btn-group-xs">
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartPlus_btn">
                                     <span class="glyphicon glyphicon-plus"></span>
                                 </button>
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartMinus_btn">
                                     <span class="glyphicon glyphicon-minus"></span>
                                 </button>
                             </div>
@@ -150,11 +154,11 @@
                         <td>
                             <div class="btn-group　btn-group-xs">
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartPlus_btn">
                                     <span class="glyphicon glyphicon-plus"></span>
                                 </button>
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartMinus_btn">
                                     <span class="glyphicon glyphicon-minus"></span>
                                 </button>
                             </div>
@@ -185,11 +189,11 @@
                         <td>
                             <div class="btn-group　btn-group-xs">
                                 <button type="button"
-                                        class="btn btn-primary">
-                                    <span class="glyphicon glyphicon-plus"></span>
+                                        class="btn btn-primary cartPlus_btn">
+                                    <span class="glyphicon glyphicon-plus "></span>
                                 </button>
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartMinus_btn">
                                     <span class="glyphicon glyphicon-minus"></span>
                                 </button>
                             </div>
@@ -220,11 +224,11 @@
                         <td>
                             <div class="btn-group　btn-group-xs">
                                 <button type="button"
-                                        class="btn btn-primary">
-                                    <span class="glyphicon glyphicon-plus"></span>
+                                        class="btn btn-primary cartPlus_btn">
+                                    <span class="glyphicon glyphicon-plus "></span>
                                 </button>
                                 <button type="button"
-                                        class="btn btn-primary">
+                                        class="btn btn-primary cartMinus_btn">
                                     <span class="glyphicon glyphicon-minus"></span>
                                 </button>
                             </div>
@@ -234,6 +238,13 @@
                         </td>
                     </tr>
                 </table>
+            </div>
+
+            <div class="panel panel-danger well well-sm">
+                <div class="panel-heading">
+                    <h4>总计</h4>
+                </div>
+
             </div>
 
             <h1 class="text-right">
