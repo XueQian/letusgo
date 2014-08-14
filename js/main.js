@@ -1,6 +1,8 @@
 $(document).ready(function () {
-    cartPlusFunction();
-    cartMinusFunction();
+   cartPlusFunction();
+   cartMinusFunction();
+
+
 
 
 
@@ -8,7 +10,7 @@ $(document).ready(function () {
 });
 function cartPlusFunction(){
     if (!localStorage.getItem("cartPlus")) {
-        localStorage.setItem("cartPlus", 0);
+        localStorage.setItem("cartPlus",0 );
     }
 
     $('.cartPlus_btn').on('click', function () {
@@ -21,13 +23,13 @@ function cartPlusFunction(){
 }
 
 function cartMinusFunction(){
-    if (!localStorage.getItem("cartMinus")) {
-        localStorage.setItem("cartMinus", 0);
-    }
 
+    if (localStorage.getItem("cartPlus")) {
+        localStorage.setItem("cartMinus", localStorage.cartPlus);
+    }
     $('.cartMinus_btn').on('click', function () {
 
-        localStorage.cartMinus = parseInt(localStorage.getItem("cartPlus")) - 1;
+        localStorage.cartMinus = parseInt(localStorage.getItem("cartMinus")) - 1;
         $('.cartPlus_display').text(localStorage.cartMinus);
 
     });
