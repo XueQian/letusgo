@@ -13,7 +13,11 @@
 
     <link rel="stylesheet" href="lib/bootstrap-3.2.0-dist/css/bootstrap.min.css"/>
 
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/goodsList_operate.js"></script>
+    <script type="text/javascript" src="js/cartItem.js"></script>
+    <script type="text/javascript" src="js/item.js"></script>
+    <script type="text/javascript" src="js/loadItem.js"></script>
+
 
 </head>
 <body>
@@ -43,7 +47,7 @@
 
             </div>
 
-            <div class="col-md-1 col-md-offset-11">
+            <div class="col-md-1 col-md-offset-11" >
 
                 <h2>
                     <a href="cart.html">
@@ -58,189 +62,41 @@
     </div>
 </div>
 
-<div class="panel panel-danger well well-sm">
+
+
+<div class="panel panel-danger well well-sm " >
     <div class="panel-heading">
         <table>
             <tr>
-                <th><h2>服装鞋包</h2></th>
+                <th><h2 id="goodsList_category">商场</h2></th>
                 <th><h4 class="text-right">GOODS LIST!!!</h4></th>
             </tr>
         </table>
     </div>
-
-
-    <table class="table table-striped text-center">
-        <tr>
+    <table class="table table-striped text-center" id="goodsList_table">
+        <tr id="goodsList_header">
             <th class="text-center">分类</th>
             <th class="text-center">名称</th>
             <th class="text-center">单价</th>
             <th class="text-center">单位</th>
             <th class="text-center">添加</th>
         </tr>
-        <tr>
-            <td>服装鞋包</td>
-            <td>服装１</td>
-            <td>１２２</td>
-            <td>１</td>
-            <td>
-                <button type="button"
-                        class="btn btn-primary cartPlus_btn">
-                    ADD
-                </button>
+        <!--<div ></div>-->
+        <!--<tr>-->
+            <!--<td id="goodsList_category">服装鞋包</td>-->
+            <!--<td id="goodsList_name">服装１</td>-->
+            <!--<td id="goodsList_price">１２２</td>-->
+            <!--<td id="goodsList_unit">１</td>-->
+            <!--<td id="goodsList_addButton">-->
+                <!--<button type="button"-->
+                        <!--class="btn btn-primary cartPlus_btn">-->
+                    <!--添加-->
+                <!--</button>-->
 
-            </td>
-        </tr>
+            <!--</td>-->
+        <!--</tr>-->
     </table>
 </div>
-
-
-<div class="panel panel-danger well well-sm">
-    <div class="panel-heading">
-        <table>
-            <tr>
-
-                <th><h2>手机数码</h2></th>
-                <th><h4 class="text-right">GOODS LIST!!!</h4></th>
-            </tr>
-        </table>
-    </div>
-
-
-    <table class="table table-striped text-center">
-        <tr>
-            <th class="text-center">分类</th>
-            <th class="text-center">名称</th>
-            <th class="text-center">单价</th>
-            <th class="text-center">单位</th>
-            <th class="text-center">添加</th>
-        </tr>
-        <tr>
-            <td>手机数码</td>
-            <td>服装１</td>
-            <td>１２２</td>
-            <td>１</td>
-            <td>
-                <button type="button"
-                        class="btn btn-primary cartPlus_btn">
-                    ADD
-                </button>
-
-            </td>
-        </tr>
-    </table>
-</div>
-
-
-<div class="panel panel-danger well well-sm">
-    <div class="panel-heading">
-        <table>
-            <tr>
-
-                <th><h2>全球美食</h2></th>
-                <th><h4 class="text-right">GOODS LIST!!!</h4></th>
-            </tr>
-        </table>
-    </div>
-
-
-    <table class="table table-striped text-center">
-        <tr>
-            <th class="text-center">分类</th>
-            <th class="text-center">名称</th>
-            <th class="text-center">单价</th>
-            <th class="text-center">单位</th>
-            <th class="text-center">添加</th>
-        </tr>
-        <tr>
-            <td>全球美食</td>
-            <td>服装１</td>
-            <td>１２２</td>
-            <td>１</td>
-            <td>
-                <button type="button"
-                        class="btn btn-primary cartPlus_btn">
-                    ADD
-                </button>
-
-            </td>
-        </tr>
-    </table>
-</div>
-
-
-<div class="panel panel-danger well well-sm">
-    <div class="panel-heading">
-        <table>
-            <tr>
-
-                <th><h2>护肤彩妆</h2></th>
-                <th><h4 class="text-right">GOODS LIST!!!</h4></th>
-            </tr>
-        </table>
-    </div>
-
-
-    <table class="table table-striped text-center">
-        <tr>
-            <th class="text-center">分类</th>
-            <th class="text-center">名称</th>
-            <th class="text-center">单价</th>
-            <th class="text-center">单位</th>
-            <th class="text-center">添加</th>
-        </tr>
-        <tr>
-            <td>服装鞋包</td>
-            <td>服装１</td>
-            <td>１２２</td>
-            <td>１</td>
-            <td>
-                <button type="button"
-                        class="btn btn-primary cartPlus_btn">
-                    ADD
-                </button>
-
-            </td>
-        </tr>
-    </table>
-</div>
-
-<div class="panel panel-danger well well-sm">
-    <div class="panel-heading">
-        <table>
-            <tr>
-
-                <th><h2>母婴用品</h2></th>
-                <th><h4 class="text-right">GOODS LIST!!!</h4></th>
-            </tr>
-        </table>
-    </div>
-
-
-    <table class="table table-striped text-center">
-        <tr>
-            <th class="text-center">分类</th>
-            <th class="text-center">名称</th>
-            <th class="text-center">单价</th>
-            <th class="text-center">单位</th>
-            <th class="text-center">添加</th>
-        </tr>
-        <tr>
-            <td>母婴用品</td>
-            <td>服装１</td>
-            <td>１２２</td>
-            <td>１</td>
-            <td>
-                <button type="button"
-                        class="btn btn-primary cartPlus_btn">
-                    ADD
-                </button>
-
-            </td>
-        </tr>
-    </table>
-</div>
-
-
 </form>
 </div>
 
