@@ -1,9 +1,6 @@
-function CartItem(item, num){
+function cartItem(item, count){
     this.item = item;
-    this.num = num;
+    this.count = count;
 }
 
-CartItem.prototype.smallCaculate = function() {
-    return this.item.price * this.num ;
-};
 
